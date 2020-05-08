@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Derictory</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <div class="top">
+        <img src="image/95800664_2390907007874327_8939984506912243712_n.jpg" alt="my picture" class="photo"> 
+        <table class="up">
+            <tr>
+                <td id="name">Aldeguer Galvez</td>
+            </tr>
+            <tr>
+                <td id="course">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY - 2k</td>
+            </tr>
+            <tr>
+                <td id="moto">"“I have not failed. I've just <br> 10,000 ways that won't work.”</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+    <div class="bottom">
+        <table class="top1">
+            <tr>
+                <td><img src="image/icon/i1.PNG" alt="" class="icon"></td>
+                <td>Integrative Programming and<br>Technologies 1</td>
+            </tr>
+            <tr>
+                <td><img src="image/icon/i2.PNG" alt="" class="icon"></td>
+                <td>IT129</td>
+            </tr>
+            <tr>
+                <td><img src="image/icon/i4.PNG" alt="" class="icon"></td>
+                <td>A263</td>
+            </tr>
+            <tr>
+                <td><img src="image/icon/i6.PNG" alt="" class="icon"></td>
+                <td>TTH 7:30 - 10:00 AM</td>
+            </tr>
+            <tr>
+                <td><img src="image/icon/i7.PNG" alt="" class="icon"></td>
+                <td>HS113</td>
+            </tr>
+        </table>
+    </div>
+    <button id="home" onclick="document.getElementById('con').style.display='block', document.getElementById('con1').style.display='none', document.getElementById('con2').style.display='none'">Home ← </button>
+    </div>
+    
+    <div class="container">
+        <div id="con" class="" style="display: block;">
+        <center><h1>MY COMPILATION OF ACTIVITIES</h1></center>
+        <table id="directory" class="directory">
+            <tr>
+                <th>File</th>
+                <th>Description</th>
+                <th>Topic</th>
+                <th>Data Submitted</th>
+            </tr>
+           
+            <tr>
+                <td><a href="Activities/XML-encoding.pdf ">Activity 1</a></td>
+                <td>Understandig XML</td>
+                <td>XML</td>
+                <td>January 28, 2020</td>
+            </tr>
+            <tr>
+                <td><a href="Activities/exercise 1.pdf ">exercise 1</a></td>
+                <td>My first javascript program</td>
+                <td>javascript</td>
+                <td>March 12,2020</td>
+            </tr>
+            <tr>
+                <td><a href="Activities/exercise 2.pdf ">exercise 2</a></td>
+                <td>My first javascript program</td>
+                <td>javascript</td>
+                <td>March 12,2020</td>
+            </tr>
+            <tr>
+                <td><a href="Activities/exercise 3.pdf ">exercise 3</a></td>
+                <td>My first javascript program</td>
+                <td>javascript</td>
+                <td>March 12,2020</td>
+            </tr>
+            <tr>
+                <td><a href="Activities/exercise 4.pdf ">exercise 4</a></td>
+                <td>My first javascript program</td>
+                <td>javascript</td>
+                <td>March 12,2020</td>
+            </tr>
+        </table>
+        </div>
+        <div id="con1" class=" " style="display: none;">
+            <div><button  id="exit" onclick="document.getElementById('con1').style.display='none'">x</button></div>
+            <div id="subcon">
+                <label for="">File Name</label><br>
+                <input type="text" id="filename">
+                <input type="file" name="" id="fileholder"><br>
+                <label for="">Discription</label><br>
+                <textarea name="" id="discription" cols="30" rows="10"></textarea><br>
+                <label for="">Topic</label><br>
+                <input type="text" name="" id="topic"><br>
+                <label for="">Date Submitted</label><br>
+                <input type="date" name="" id="datesubmit"><br><br>
+                <script src="javas.js"></script>
+                <button type="button" id="submit"  onclick="myfunction()">Submit</button>
+            </div>
+        </div>
+        <div id="con2" class="" style="display: none;">
+            <h1>WEBSITE EVALUATION RUBRIC</h1>
+            <table id="directory1" class="directory1">
+                
+                <tr>
+                    <th>#</th>
+                    <th>Criteria</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td id="num">1</td>
+                    <td id="crit">Consistency</td>
+                    <td id="sel1">
+                        <div class="wrapper">
+                            <select name="rate" id="rating">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">2</td>
+                    <td id="crit">Color Scheme - Attractiveness</td>
+                    <td id="sel2">
+                        <div class="wrapper">
+                            <select name="rate" id="rating1">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">3</td>
+                    <td id="crit">Color Scheme - Color Branding</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating2">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">4</td>
+                    <td id="crit">Layout - Empty Space</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating3">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">5</td>
+                    <td id="crit">Layout - Proximity</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating4">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">6</td>
+                    <td id="crit">Layout - Typography</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating5">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">7</td>
+                    <td id="crit">Layout - Responsive</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating6">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">8</td>
+                    <td id="crit">Navigation Links - Active</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating7">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">9</td>
+                    <td id="crit" >Navigation Links - Search and Filter</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating8">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num">10</td>
+                    <td id="crit">Navigation Links - Ease of Navigation</td>
+                    <td id="sel">
+                        <div class="wrapper">
+                            <select name="rate" id="rating9">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+                <script src="calculate.js"></script>
+                <button type="button" id="submit" onclick="mycalculate()">Calculate</button>
+        </div>       
+        <div id="but" class="w3-bottomright">
+            <button class="rtw" onclick="document.getElementById('con2').style.display='block', document.getElementById('con').style.display='none', document.getElementById('con1').style.display='none'">RATE THIS WEBSITE</button>
+            <button class="ama" onclick="document.getElementById('con1').style.display='block', document.getElementById('con').style.display='block', document.getElementById('con2').style.display='none'">ADD MORE ACTIVITIES </button>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
